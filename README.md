@@ -122,7 +122,7 @@ misattribute it under the wrong protocol's name.
 
 ## Test vectors
 
-`test/rtp/header_test.cljc`'s `constructed-frame` is hand-built and labelled
+`test/rtp/header_test.cljk`'s `constructed-frame` is hand-built and labelled
 `;; constructed, not a published spec vector` — RFC 3550 §5.1 documents the
 *bit layout* of the fixed header but, unlike RFC 3261 §24 for SIP, does not
 publish a worked numeric example packet to cite. Every other test vector
@@ -131,7 +131,7 @@ constructed and derived by running this library's own implementation of the
 cited algorithm — RFC 3550 Appendix A's pseudocode is precise enough that a
 correct translation's output is independently checkable by hand (see the
 comments beside `loss-stats-with-loss` and `jitter-tracks-known-single-step`
-in `test/rtp/seq_test.cljc` for worked-by-hand examples), which is a
+in `test/rtp/seq_test.cljk` for worked-by-hand examples), which is a
 different and stronger claim than "matches a number I made up."
 
 ## Discrimination proof
