@@ -88,7 +88,7 @@ from *zero* loss, which is a worse bug than not clamping at all.
 ## SDP — checked, not present
 
 Before writing anything here, this workspace's repo index
-(`nbb scripts/repo-search.cljs sdp`) was searched for an existing Session
+(`kbb --backend sci scripts/repo-search.cljk sdp`) was searched for an existing Session
 Description Protocol (RFC 4566) implementation, since SDP is what actually
 carries the payload-type ↔ codec mapping, port numbers and RTP/RTCP
 multiplexing this library assumes was negotiated out-of-band. Three repos
